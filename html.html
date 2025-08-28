@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>⚠️ Alerta de Segurança</title>
+  <style>
+    body {
+      background-color: black;
+      color: red;
+      font-family: monospace;
+      font-size: 20px;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .blinking {
+      animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .warning-box {
+      border: 2px solid red;
+      padding: 20px;
+      margin: 30px auto;
+      width: 60%;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="warning-box blinking">
+    ⚠️ ACESSO NÃO AUTORIZADO DETECTADO ⚠️<br><br>
+    Seus dados estão sendo coletados...<br>
+    IP rastreado • Localização comprometida • Sistema vulnerável<br><br>
+    <strong>⚠️ NÃO FECHE ESTA JANELA ⚠️</strong><br>
+    Iniciando varredura de dados em 3... 2... 1...
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
+  </audio>
+</body>
+</html>
