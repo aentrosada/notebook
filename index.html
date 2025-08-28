@@ -13,18 +13,9 @@
       margin-top: 100px;
     }
 
-    .blinking {
-      animation: blink 0.7s infinite;
-    }
-
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
-
     .warning-box {
       border: 2px solid red;
-      padding: 20px;
+      padding: 30px;
       margin: 30px auto;
       width: 60%;
     }
@@ -35,12 +26,14 @@
   </style>
 </head>
 <body>
-  <div class="warning-box blinking">
-    ⚠️ ACESSO NÃO AUTORIZADO DETECTADO ⚠️<br><br>
-    Seus dados estão sendo coletados...<br>
-    IP rastreado • Localização comprometida • Sistema vulnerável<br><br>
-    <strong>⚠️ NÃO FECHE ESTA JANELA ⚠️</strong><br>
-    Iniciando varredura de dados em 3... 2... 1...
+  <div class="warning-box">
+    ⚠️ **ATENÇÃO: RISCO AO ESCANEAR QR CODES DESCONHECIDOS** ⚠️<br><br>
+    Ao escanear QR codes de fontes não confiáveis, você pode estar expondo seus dados pessoais e seu dispositivo a riscos graves.<br>
+    • **Roubo de dados**<br>
+    • **Instalação de malware**<br>
+    • **Phishing e golpes**<br><br>
+    Não confie em QR codes de fontes desconhecidas. Se algo parecer suspeito, **NÃO ESCANEIE.**<br><br>
+    <strong>Proteja suas informações e sua segurança digital.</strong>
   </div>
 
   <audio autoplay loop>
